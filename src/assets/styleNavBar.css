@@ -1,0 +1,28 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.button {
+    position: relative;
+    padding: 25px 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    
+}
+
+a:hover{
+    background: rgb(221, 178, 221);
+    box-shadow: 0 0 5px rgb(208, 153, 208),
+                0 0 25px rgb(208, 153, 208),
+                0 0 50px rgb(208, 153, 208),
+                0 0 200px rgb(208, 153, 208);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+
+.dropdown-item:hover {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: rgb(221, 178, 221) !important;
+}
