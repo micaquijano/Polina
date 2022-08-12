@@ -3,14 +3,12 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import SobreNosotros from "./SobreNosotros"
 
+
 export const Main = () => {
   return (
 <>
-  <Routes>
-  <Route exact path='/SobreNosotros' component={SobreNosotros}/>
-    </Routes>
+<Routes> <Route path='/SobreNosotros' element={<SobreNosotros />}></Route> </Routes>
 </>
   )
 }
-
-  
+ 
