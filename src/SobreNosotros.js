@@ -1,51 +1,52 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
-import { CardGroup } from 'semantic-ui-react'
+import { Card, CardGroup } from 'react-bootstrap';
 import './assets/styleMain.css'
 
 export const SobreNosotros = () => {
   return (
-    <CardGroup>
+    <>
+<CardGroup>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>DESDE CERO</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+          Cada pieza lleva un largo proceso de trabajo que la hace única y exclusiva. Con un diseño actual y diferente, su creación supone varias horas de mimo y dedicación. La artesanía es lo que las hace diferentes, convirtiéndolas en pequeñas y valiosas obras de arte.
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
+        <Card.Img variant="top" src="https://media.istockphoto.com/photos/cup-and-saucer-on-a-white-background-picture-id1180657732?k=20&m=1180657732&s=612x612&w=0&h=h3CRtRyXfk0BmI7Wn_AdizLn2LGJaGLvCv2ITeFQ4h4=" />
+        </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>IMPERFECTA PERFECCIÓN</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+          Las piezas son fabricadas a mano, sin ayuda de moldes ni torno. Es por ello que cada unidad es única e irrepetible. Cada pequeña irregularidad es lo que las caracteriza y les da ese aire tan fresco y artesano.  
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
+        </Card>
     </CardGroup>
+    <CardGroup>
+    <Card>
+        <Card.Body>
+          <Card.Title>MEJORES CALIDADES</Card.Title>
+          <Card.Text>
+          Todas las piezas son elaboradas apoyando al pequeño negocio de proximidad con los productos de la más alta calidad. Buscamos procesos responsables y respetuosos con el medio ambiente.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="https://media.istockphoto.com/photos/cup-and-saucer-on-a-white-background-picture-id1180657732?k=20&m=1180657732&s=612x612&w=0&h=h3CRtRyXfk0BmI7Wn_AdizLn2LGJaGLvCv2ITeFQ4h4=" />
+        </Card>
+      <Card>
+        <Card.Body>
+          <Card.Title>MUCHO LOVE</Card.Title>
+          <Card.Text>
+          Siempre he intentado difundir el amor propio y la búsqueda del bienestar interior. Es uno de los valores de Inesita's, uno esencial que todos debemos intentar fomentar. No hay nada más satisfactorio que hacer las cosas creyendo y apoyándose a uno mismo, por eso trato de hacer las cosas así, con tanto love.  
+          </Card.Text>
+        </Card.Body>
+        </Card>
+    </CardGroup>
+</>
   )
 }
