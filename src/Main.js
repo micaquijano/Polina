@@ -1,15 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
-import { Routes, Route, } from 'react-router-dom';
-import { SobreNosotros } from './SobreNosotros';
+import { Routes,  BrowserRouter, } from 'react-router-dom';
 
 export const Main = () => {
   return (
 <>
+<BrowserRouter>
 <Routes>
-<Route exact path='/SobreNosotros'element={SobreNosotros} ></Route>
   </Routes> 
- 
+  </BrowserRouter>
 </>
   )
 }

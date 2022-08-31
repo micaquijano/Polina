@@ -1,13 +1,16 @@
 import React from 'react'
-import { Card, CardGroup } from 'react-bootstrap';
-import './assets/styleMain.css'
+import { Card, CardGroup, Container } from 'react-bootstrap';
+import Img from './assets/imagenes/SN1.png';
+import Img1 from './assets/imagenes/SN2.png';
+import './assets/styleSobreNosotros.css'
 
 export const SobreNosotros = () => {
   return (
     <>
-<CardGroup>
-      <Card>
-        <Card.Body>
+    <Container>
+<CardGroup className='Card-container'>
+      <Card >
+        <Card.Body >
           <Card.Title>DESDE CERO</Card.Title>
           <Card.Text>
           Cada pieza lleva un largo proceso de trabajo que la hace única y exclusiva. Con un diseño actual y diferente, su creación supone varias horas de mimo y dedicación. La artesanía es lo que las hace diferentes, convirtiéndolas en pequeñas y valiosas obras de arte.
@@ -15,7 +18,7 @@ export const SobreNosotros = () => {
         </Card.Body>
       </Card>
       <Card>
-        <Card.Img variant="top" src="https://media.istockphoto.com/photos/cup-and-saucer-on-a-white-background-picture-id1180657732?k=20&m=1180657732&s=612x612&w=0&h=h3CRtRyXfk0BmI7Wn_AdizLn2LGJaGLvCv2ITeFQ4h4=" />
+        <Card.Img variant="top" src={Img} />
         </Card>
       <Card>
         <Card.Body>
@@ -36,7 +39,7 @@ export const SobreNosotros = () => {
         </Card.Body>
       </Card>
       <Card>
-        <Card.Img variant="top" src="https://media.istockphoto.com/photos/cup-and-saucer-on-a-white-background-picture-id1180657732?k=20&m=1180657732&s=612x612&w=0&h=h3CRtRyXfk0BmI7Wn_AdizLn2LGJaGLvCv2ITeFQ4h4=" />
+        <Card.Img variant="top" src={Img1} />
         </Card>
       <Card>
         <Card.Body>
@@ -47,6 +50,7 @@ export const SobreNosotros = () => {
         </Card.Body>
         </Card>
     </CardGroup>
+    </Container>
 </>
   )
 }

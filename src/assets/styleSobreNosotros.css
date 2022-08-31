@@ -1,0 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.card {
+    --bs-card-border-width: 0px;
+   padding: 1rem;
+   font-family: ui-monospace;
+}
+.Card-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
