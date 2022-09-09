@@ -1,5 +1,12 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+img, svg {
+    vertical-align: middle;
+    width: 40% !important;
+}
+.menu-style {
+    justify-content: space-between;
+}
 .buttons {
     position: relative;
     padding: 25px 30px;

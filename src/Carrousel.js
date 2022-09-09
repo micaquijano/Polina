@@ -1,9 +1,9 @@
 import React from 'react'
 import './assets/Carrousel.css'
 import { Carousel } from 'react-bootstrap'
-import CarrouselImg from './assets/imagenes/carrousel1.png';
-import CarrouselImg2 from './assets/imagenes/carrousel2.jpg';
-import CarrouselImg3 from './assets/imagenes/CarrouselI3.jpg';
+import CarrouselImg from './assets/imagenes/carousel3.png';
+import CarrouselImg2 from './assets/imagenes/carousel2.png';
+import CarrouselImg3 from './assets/imagenes/carousel5.png';
 
 export const Carrousel = () => {
   return (
@@ -15,9 +15,6 @@ export const Carrousel = () => {
           src={CarrouselImg}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
         <img
@@ -25,9 +22,6 @@ export const Carrousel = () => {
           src={CarrouselImg2}
           alt="Second slide"
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -35,9 +29,6 @@ export const Carrousel = () => {
           src={CarrouselImg3}
           alt="Third slide"
         />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel> 
     </>

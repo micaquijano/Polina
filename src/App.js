@@ -4,7 +4,6 @@ import { Main } from './Main'
 import { SobreNosotros } from './SobreNosotros'
 import { Carrousel } from './Carrousel'
 
-
 export const App = () => {
   return (
     
