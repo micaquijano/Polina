@@ -7,7 +7,7 @@ import './assets/styleSobreNosotros.css'
 export const SobreNosotros = () => {
   return (
     <>
-    <Container>
+    <Container >
 <CardGroup className='Card-container'>
       <Card >
         <Card.Body >

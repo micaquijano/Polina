@@ -13,7 +13,7 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav "/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" >
-            <Nav.Link className='buttons' href="/SobreNosotros">Sobre Nosotros</Nav.Link>
+            <Nav.Link className='buttons' href="#SobreNosotros">Sobre Nosotros</Nav.Link>
             <Nav.Link className='buttons' href="/Contactos">Contactos</Nav.Link>
             <NavDropdown className='buttons' title="Nuestros Productos" id="collasible-nav-dropdown">
               <NavDropdown.Item className='buttons' href="#action/3.1">Tazas Personalizadas</NavDropdown.Item>
