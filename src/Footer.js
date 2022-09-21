@@ -10,20 +10,15 @@ export const Footer = () => {
         <Row>
           <Col>
             <ul>
-              <h3>Contactanos</h3>
+              <h3 className='text-contacto'>Contactanos</h3>
               <li>
-                <a href="https://www.facebook.com/">
-                  <i className="bi bi-facebook "></i> TiaDeBarro
+                <a href="https://www.instagram.com/tiadebarro/">
+                  <i className="bi bi-instagram"></i> Tia de Barro
                 </a>
               </li>
               <li>
                 <a href="https://www.whatsapp.com/">
                   <i className="bi bi-whatsapp"></i> +54 9 11 5618-1807
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/tiadebarro/">
-                  <i className="bi bi-instagram"></i> Tia de Barro
                 </a>
               </li>
               <li>

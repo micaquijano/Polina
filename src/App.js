@@ -4,6 +4,7 @@ import { Main } from './Main'
 import { SobreNosotros } from './SobreNosotros'
 import { Carrousel } from './Carrousel'
 import { Footer } from './Footer'
+import VideoCarrousel from './VideoCarrousel'
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
       <Main />
       <Carrousel />
       <SobreNosotros />
+      <VideoCarrousel />
       <Footer />
     </>
   )

@@ -9,7 +9,6 @@ img, svg {
 }
 .buttons {
     position: relative;
-    padding: 25px 30px;
     margin: 10px;
     text-transform: uppercase;
     transition: 0.5s;

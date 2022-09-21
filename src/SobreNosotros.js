@@ -3,6 +3,7 @@ import { Card, CardGroup, Container } from 'react-bootstrap';
 import Img from './assets/imagenes/SN1.png';
 import Img1 from './assets/imagenes/SN2.png';
 import './assets/styleSobreNosotros.css'
+import Instagram from './assets/imagenes/instagram.png'
 
 export const SobreNosotros = () => {
   return (
@@ -10,7 +11,7 @@ export const SobreNosotros = () => {
     <Container >
 <CardGroup className='Card-container'>
       <Card >
-        <Card.Body >
+        <Card.Body id='SobreNosotros'>
           <Card.Title>DESDE CERO</Card.Title>
           <Card.Text>
           Cada pieza lleva un largo proceso de trabajo que la hace única y exclusiva. Con un diseño actual y diferente, su creación supone varias horas de mimo y dedicación. La artesanía es lo que las hace diferentes, convirtiéndolas en pequeñas y valiosas obras de arte.
@@ -39,7 +40,7 @@ export const SobreNosotros = () => {
         </Card.Body>
       </Card>
       <Card>
-        <Card.Img variant="top" src={Img1} />
+      <Card.Img variant="top" src={Img1}></Card.Img>
         </Card>
       <Card>
         <Card.Body>
@@ -51,6 +52,12 @@ export const SobreNosotros = () => {
         </Card>
     </CardGroup>
     </Container>
+    <div className='img_container'>
+        <a target="blank" href="https://www.instagram.com/tiadebarro/"  className='img_button btn'>Instagram</a> 
+        <img src={Instagram} alt='...' className='imgCover'/>
+      </div>
+    
+				
 </>
   )
 }

@@ -28,3 +28,18 @@
 a:hover {
     color: rgb(199, 136, 220);
 }
+.h4, h4 {
+    font-size: 20px;
+    font-family: none;
+}
+.h3 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+.text-contacto{
+    text-align: left;
+    margin: 5px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+
