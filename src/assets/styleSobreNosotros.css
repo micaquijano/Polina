@@ -10,6 +10,9 @@
     position: relative;
     align-items: center;
 }
+.img-insta{
+    width: 100% !important;
+}
 
 .img_container {
     position: relative;
@@ -21,7 +24,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 15rem;
+    bottom: 20rem;
 }
 .btn {
     text-decoration: none;

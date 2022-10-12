@@ -3,7 +3,7 @@ import { Card, CardGroup, Container } from 'react-bootstrap';
 import Img from './assets/imagenes/SN1.png';
 import Img1 from './assets/imagenes/SN2.png';
 import './assets/styleSobreNosotros.css'
-import Instagram from './assets/imagenes/instagram.png'
+import Instagram from './assets/imagenes/instagram.jpg'
 
 export const SobreNosotros = () => {
   return (
@@ -54,7 +54,7 @@ export const SobreNosotros = () => {
     </Container>
     <div className='img_container'>
         <a target="blank" href="https://www.instagram.com/tiadebarro/"  className='img_button btn'>Instagram</a> 
-        <img src={Instagram} alt='...' className='imgCover'/>
+        <img src={Instagram} alt='...' className='imgCover img-insta'/>
       </div>
     
 				
