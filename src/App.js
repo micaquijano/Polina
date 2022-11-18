@@ -5,7 +5,6 @@ import { SobreNosotros } from "./SobreNosotros";
 import { Carrousel } from "./Carrousel";
 import { Footer } from "./Footer";
 import VideoCarrousel from "./VideoCarrousel";
-import Productos from "./Productos";
 
 export const App = () => {
   return (
@@ -15,7 +14,7 @@ export const App = () => {
       <Carrousel />
       <SobreNosotros />
       <VideoCarrousel />
-      <Productos title="Rick and Morty" />
+      {/* <Productos title="Rick and Morty" /> */}
       <Footer />
     </>
   );
