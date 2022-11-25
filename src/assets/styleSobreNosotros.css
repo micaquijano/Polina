@@ -40,3 +40,21 @@
 .imgCover{
     object-fit: cover;
 }
+.imgCard{
+    width: 60% !important;
+}
+.imgCard:hover{
+    transform: scale(1.10); 
+}
+.cover{
+    object-fit: cover;
+}
+.card{
+align-items: center;
+}
+.h1{
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}

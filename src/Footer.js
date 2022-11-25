@@ -30,8 +30,28 @@ export const Footer = () => {
           </Col>
         </Row>
       </Container>
+      <Container className='footer-Container'>
+        <Row>
+          <Col>
+            <ul>
+              <h3 className='text-contacto'>Medios de Pago</h3>
+              <li >
+                <img className='Mp' src='./../imagenes/mediosDePagos/mercadoPago.png' alt='#'></img>
+                <p>mercado Pago</p>
+              </li>
+              <li>
+              <img className='img-icons' src='./../imagenes/mediosDePagos/efectivo.png' alt='#'></img> 
+              <p>Efectivo</p> 
+              </li>
+              <li>
+              <img className='img-icons' src='./../imagenes/mediosDePagos/tranferenciaBancaria.png' alt='#'></img>
+              <p>Transferencia Bancaria</p>  
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </div>
-    <hr/>
     <h4 className="text-Footer">
       &copy; copyrigth 2022 - Tia de Barro. Todos los derechos
       reservados.

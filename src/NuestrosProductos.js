@@ -1,6 +1,7 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card, CardGroup, } from 'react-bootstrap';
 import productosList from './productosList.js'
+import './assets/styleSobreNosotros.css'
 import { useState, useEffect } from 'react';
 
 
@@ -22,13 +23,15 @@ export const NuestrosProductos = () => {
     return ( 
     <>
     {items.map((productos) =>{return <>
-      <Card key={productos.id}>
-      <Card.Img variant="top" src={productos.img} />
+    <CardGroup>
+      <Card style={{ width: '18rem' }}>
+      <Card.Img className='imgCard cover' variant="top" src={productos.img} />
       <Card.Body>
-        <Card.Title>{productos.name}</Card.Title>
+        <h1 class="bi bi-currency-dollar">{productos.price}</h1>
         <Button variant="primary">Comprar</Button>
       </Card.Body>
     </Card>
+    </CardGroup>
     </>
     })}
     </>
