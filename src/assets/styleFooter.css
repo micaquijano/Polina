@@ -22,8 +22,9 @@
   }
   a {
     color: var(--bs-link-color);
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
+    padding-left: 1rem;
 }
 a:hover {
     color: rgb(199, 136, 220);
@@ -50,4 +51,7 @@ a:hover {
 }
 .footer-Container{
   width: fit-content;
+}
+.icons-social{
+  width: 22px !important;
 }

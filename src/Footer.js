@@ -12,19 +12,12 @@ export const Footer = () => {
             <ul>
               <h3 className='text-contacto'>Contactanos</h3>
               <li>
-                <a href="https://www.instagram.com/tiadebarro/">
-                  <i className="bi bi-instagram"></i> Tia de Barro
-                </a>
+              <img className='icons-social' src='./../imagenes/icons/instagram.png' alt='#' ></img>
+                <a href="https://www.instagram.com/tiadebarro/">Tia de Barro</a>
               </li>
               <li>
-                <a href="https://www.whatsapp.com/">
-                  <i className="bi bi-whatsapp"></i> +54 9 11 5618-1807
-                </a>
-              </li>
-              <li>
-                <a href="https://mail.google.com/">
-                  <i className="bi bi-envelope"></i> info@TiaDeBarro.org
-                </a>
+              <img className='icons-social' src='./../imagenes/icons/whatsapp.png' alt='#' ></img>
+                <a href="https://www.whatsapp.com/">+54 9 11 5618-1807</a>
               </li>
             </ul>
           </Col>
@@ -36,15 +29,15 @@ export const Footer = () => {
             <ul>
               <h3 className='text-contacto'>Medios de Pago</h3>
               <li >
-                <img className='Mp' src='./../imagenes/mediosDePagos/mercadoPago.png' alt='#'></img>
+                <img className='Mp' src='./../imagenes/icons/mercadoPago.png' alt='#'></img>
                 <p>mercado Pago</p>
               </li>
               <li>
-              <img className='img-icons' src='./../imagenes/mediosDePagos/efectivo.png' alt='#'></img> 
+              <img className='img-icons' src='./../imagenes/icons/efectivo.png' alt='#'></img> 
               <p>Efectivo</p> 
               </li>
               <li>
-              <img className='img-icons' src='./../imagenes/mediosDePagos/tranferenciaBancaria.png' alt='#'></img>
+              <img className='img-icons' src='./../imagenes/icons/tranferenciaBancaria.png' alt='#'></img>
               <p>Transferencia Bancaria</p>  
               </li>
             </ul>

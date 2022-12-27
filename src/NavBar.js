@@ -1,12 +1,13 @@
 import React from 'react'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import Diamond from './assets/imagenes/logoTiaDeBarro.jpeg';
+import { Home } from './Home';
 import './assets/styleNavBar.css'
 
 export const NavBar = () => {
   return (
     <Navbar className='menu-style' collapseOnSelect expand="lg" bg="light" variant="light">
-        <Navbar.Brand href="./">
+        <Navbar.Brand href="/Home">
         <img alt='#' src={Diamond} />
         </Navbar.Brand>
         <section>
