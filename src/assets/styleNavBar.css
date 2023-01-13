@@ -2,8 +2,14 @@
 
 img, svg {
     vertical-align: middle;
-    width: 40% !important;
+    width: 130% !important;
 }
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    padding-right: 10rem;
+}
+
 .menu-style {
     justify-content: space-between;
 }

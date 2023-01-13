@@ -1,13 +1,13 @@
 import React from 'react'
-import { Routes,  BrowserRouter, Route, } from 'react-router-dom';
-import { Contactos } from './Contactos.js';
-import { NuestrosProductos } from './NuestrosProductos';
-import { Deco } from './Deco.js';
-import { Home } from './Home.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom' 
+import { Home } from './Home'
+import { Contactos } from './Contactos'
+import { NuestrosProductos } from './NuestrosProductos'
+import { Deco } from './Deco'
 
-export function Main() {
+export const Main = () => {
   return (
-<>
+    <>
 <BrowserRouter>
 <Routes>
 <Route exact path="Home" element={<Home/>}/>
@@ -20,3 +20,4 @@ export function Main() {
 </>
   )
 }
+

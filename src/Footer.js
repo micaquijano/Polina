@@ -1,54 +1,103 @@
 import React from 'react'
 import './assets/styleFooter.css'
-import { Col, Container, Row } from 'react-bootstrap'
+import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
 export const Footer = () => {
   return (
-    <footer id="page_footer">
-    <div className="footer-social-link">
-      <Container>
-        <Row>
-          <Col>
-            <ul>
-              <h3 className='text-contacto'>Contactanos</h3>
-              <li>
-              <img className='icons-social' src='./../imagenes/icons/instagram.png' alt='#' ></img>
-                <a href="https://www.instagram.com/tiadebarro/">Tia de Barro</a>
-              </li>
-              <li>
-              <img className='icons-social' src='./../imagenes/icons/whatsapp.png' alt='#' ></img>
-                <a href="https://www.whatsapp.com/">+54 9 11 5618-1807</a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-      <Container className='footer-Container'>
-        <Row>
-          <Col>
-            <ul>
-              <h3 className='text-contacto'>Medios de Pago</h3>
-              <li >
-                <img className='Mp' src='./../imagenes/icons/mercadoPago.png' alt='#'></img>
-                <p>mercado Pago</p>
-              </li>
-              <li>
-              <img className='img-icons' src='./../imagenes/icons/efectivo.png' alt='#'></img> 
-              <p>Efectivo</p> 
-              </li>
-              <li>
-              <img className='img-icons' src='./../imagenes/icons/tranferenciaBancaria.png' alt='#'></img>
-              <p>Transferencia Bancaria</p>  
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-    <h4 className="text-Footer">
-      &copy; copyrigth 2022 - Tia de Barro. Todos los derechos
-      reservados.
-    </h4>
-  </footer>
+   <>
+   <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+        <div className='me-5 d-none d-lg-block'>
+          <span>Conéctate con nosotras en las redes sociales:</span>
+        </div>
+
+        <div className='menu-container'>
+          <a href='' className='me-4 text-reset'>
+          <div class="bi bi-facebook" alt='#'></div>
+          </a>
+          <a href='' className='me-4 text-reset'>
+          <div class="bi bi-google" alt='#'></div>
+          </a>
+          <a href='' className='me-4 text-reset'>
+          <div class="bi bi-instagram" alt='#'></div>
+          </a>
+        </div>
+      </section>
+
+      <section className=''>
+        <MDBContainer className='text-center text-md-start mt-5'>
+          <MDBRow className='mt-3'>
+            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>
+                <MDBIcon icon="gem" className="me-3" />
+                Tia de Barro
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+              </p>
+            </MDBCol>
+
+            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Medios de Pago</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Tranferencia Bancaria
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Efectivo
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Mercado Pago
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Nuestros Productos</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Tazas Personalizadas
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Tazas en Stock
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Deco
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Contactos</h6>
+              <p>
+                <MDBIcon icon="home" className="me-2" />Pontevedra, Merlo, Bs As.</p>
+              <p>
+                <MDBIcon icon="envelope" className="me-3" />info@example.com</p>
+              <p>
+                <MDBIcon icon="phone" className="me-3" src='https://www.whatsapp.com/' />Whatsapp</p>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </section>
+
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+        © 2023 Copyright:
+        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+          
+      - Tia de Barro. Todos los derechos
+
+        </a>
+      </div>
+    </MDBFooter>
+   </>
   )
 }
