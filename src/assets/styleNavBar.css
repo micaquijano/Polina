@@ -5,9 +5,14 @@ img, svg {
     width: 130% !important;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    width: auto;
+}
+
 .navbar-expand-lg .navbar-nav {
     flex-direction: row;
-    padding-right: 10rem;
 }
 
 .menu-style {
@@ -37,4 +42,9 @@ a span{
 .dropdown-item:hover {
     color: var(--bs-dropdown-link-hover-color);
     background-color: rgb(221, 178, 221) !important;
+}
+.card {
+    --bs-card-border-width: 0px;
+    padding: 4rem;
+    font-family: ui-monospace;
 }
