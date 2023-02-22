@@ -5,6 +5,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 export const Footer = () => {
   return (
    <>
+   <div id='Contactos'>
    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
@@ -33,8 +34,8 @@ export const Footer = () => {
                 Tia de Barro
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+              Todas nuestras piezas son únicas y hechas a mano. Si no hay stock de la pieza que querés podés encargarla, 
+              teniendo en cuenta que los encargos tienen una demora de 15 dias aproximadamente.
               </p>
             </MDBCol>
 
@@ -60,17 +61,17 @@ export const Footer = () => {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Nuestros Productos</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/Categoria/TazasPersonalizadas' className='text-reset'>
                   Tazas Personalizadas
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/Categoria/tazasEnStock' className='text-reset'>
                   Tazas en Stock
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/Categoria/Deco' className='text-reset'>
                   Deco
                 </a>
               </p>
@@ -82,8 +83,6 @@ export const Footer = () => {
                 <MDBIcon icon="home" className="me-2" />Pontevedra, Merlo, Bs As.</p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />info@example.com</p>
-              <p>
-                <MDBIcon icon="phone" className="me-3" src='https://www.whatsapp.com/' />Whatsapp</p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
@@ -98,6 +97,7 @@ export const Footer = () => {
         </a>
       </div>
     </MDBFooter>
+    </div>
    </>
   )
 }

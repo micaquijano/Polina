@@ -15,7 +15,7 @@ export const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" >
             <Nav.Link className='buttons' href="#SobreNosotros">Sobre Nosotros</Nav.Link>
-            <Nav.Link className='buttons' href="/Contactos">Contactos</Nav.Link>
+            <Nav.Link className='buttons' href="#Contactos">Contactos</Nav.Link>
             <NavDropdown className='buttons' title="Nuestros Productos" id="collasible-nav-dropdown">
               <NavDropdown.Item className='buttons' href="/Categoria/TazasPersonalizadas">Tazas Personalizadas</NavDropdown.Item>
               <NavDropdown.Item className='buttons' href="/Categoria/tazasEnStock">
