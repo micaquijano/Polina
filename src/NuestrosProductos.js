@@ -24,7 +24,7 @@ export const NuestrosProductos = () => {
     <>
     {items.map((productos) =>{return <>
 
-    <CardGroup>
+    <CardGroup className='grid-container'>
       <Card style={{ width: '18rem' }}>
       <Card.Img className='imgCard cover' variant="top" src={productos.img} />
       <Card.Body>
