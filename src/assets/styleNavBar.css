@@ -126,8 +126,5 @@ img, svg {
   --bs-btn-hover-bg: none;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-  color: none
-}
-a:hover {
-  color: #e1b181 !important;
+  color: #e1b181
 }
