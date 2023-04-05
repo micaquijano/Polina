@@ -12,17 +12,11 @@ export const Footer = () => {
           <span>Conéctate con nosotras en las redes sociales:</span>
         </div>
 
-        <div className='menu-container'>
-          <a href='' className='me-4 text-reset'>
-          <div class="bi bi-facebook" alt='#'></div>
-          </a>
-          <a href='' className='me-4 text-reset'>
-          <div class="bi bi-google" alt='#'></div>
-          </a>
-          <a href='' className='me-4 text-reset'>
-          <div class="bi bi-instagram" alt='#'></div>
-          </a>
-        </div>
+        <ul>
+    <li><a href="#"><i class="bi bi-tiktok icons"></i></a></li>
+    <li><a href="#"><i class="bi bi-instagram icons"></i></a></li>
+    <li><a href="#"><i class="bi bi-facebook icons"></i></a></li>
+</ul>
       </section>
 
       <section className=''>
