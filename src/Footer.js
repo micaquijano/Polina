@@ -6,17 +6,28 @@ export const Footer = () => {
   return (
    <>
    <div id='Contactos'>
-   <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+   <MDBFooter bgColor='light' id='page_footer' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Conéctate con nosotras en las redes sociales:</span>
         </div>
 
-        <ul>
-    <li><a href="#"><i class="bi bi-tiktok icons"></i></a></li>
-    <li><a href="#"><i class="bi bi-instagram icons"></i></a></li>
-    <li><a href="#"><i class="bi bi-facebook icons"></i></a></li>
-</ul>
+        <article class="contenedor-redes-sociales">
+		<div class="icono">
+			<a href="https://www.instagram.com/hechoxpolina/" class="icono-primary color-instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+
+			<div class="contenedor-descripcion">
+				<a href="#" class="icono-descripcion color-instagram">Seguir Instagram</a>
+			</div>
+		</div>
+		<div class="icono">
+			<a href="https://www.tiktok.com/FormandoLaWeb" class="icono-primary color-tiktok" target="_blank"><i class="bi bi-tiktok"></i></a>
+
+			<div class="contenedor-descripcion">
+				<a href="#" class="icono-descripcion color-twitter">Seguir Tiktok</a>
+			</div>
+		</div>
+	</article>
       </section>
 
       <section className=''>
@@ -86,7 +97,7 @@ export const Footer = () => {
         © 2023 Copyright:
         <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
           
-      - Tia de Barro. Todos los derechos
+      - Polina. Todos los derechos
 
         </a>
       </div>

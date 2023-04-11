@@ -2,7 +2,7 @@
 
 img, svg {
     vertical-align: middle;
-    width: 130% !important;
+    width: 100% !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -73,6 +73,9 @@ img, svg {
 .btn-primary {
   --bs-btn-hover-bg: none;
   letter-spacing: 4px;
+}
+a:hover {
+  color: 
 }
 
 /* prueba button desplegable*/

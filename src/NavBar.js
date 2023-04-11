@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import Diamond from './assets/imagenes/logoTiaDeBarro.jpeg';
 import { Home } from './Home';
 import './assets/styleNavBar.css'
 
@@ -8,7 +7,7 @@ export const NavBar = () => {
   return (
     <Navbar className='menu-style' collapseOnSelect expand="lg" bg="light" variant="light">
         <Navbar.Brand href="/Home">
-        <img alt='#' src={Diamond} />
+        <img alt='#' src="/imagenes/polinaLogo.png" />
         </Navbar.Brand>
         <section className=' color-button'>
         <Navbar.Toggle aria-controls="responsive-navbar-nav "/>
