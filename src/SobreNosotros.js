@@ -53,7 +53,7 @@ export const SobreNosotros = () => {
     </CardGroup>
     </Container>
     <div className='img_container'>
-        <a target="blank" href="https://www.instagram.com/tiadebarro/"  className='img_button btn'>Instagram</a> 
+        <a target="blank" href="https://www.instagram.com/hechoxpolina/"  className='img_button btn'>Instagram</a> 
         <img src={Instagram} alt='...' className='imgCover img-insta'/>
       </div>
     

@@ -29,7 +29,7 @@ img, svg {
 .button {
   --border: 2px;    /* the border width */
   --slant: 0.7em;   /* control the slanted corners */
-  --color: #e1b181; /* the color */
+  --color: #bdc29e; /* the color */
   
   font-size: 17px;
   padding: 4px;
@@ -62,7 +62,7 @@ img, svg {
 
 .button:hover,button:active{
   background-size: 100% 100%;
-  color: #fff;
+  color: black;
   --t: 0.2s 0.1s;
 }
 
@@ -74,15 +74,12 @@ img, svg {
   --bs-btn-hover-bg: none;
   letter-spacing: 4px;
 }
-a:hover {
-  color: 
-}
 
 /* prueba button desplegable*/
 .navbar-expand-lg .navbar-nav .nav-link {
   --border: 2px;    /* the border width */
   --slant: 0.7em;   /* control the slanted corners */
-  --color: #e1b181; /* the color */
+  --color: #bdc29e; /* the color */
   
   font-size: 17px;
   padding: 4px;
@@ -117,7 +114,7 @@ a:hover {
 
 .navbar-expand-lg .navbar-nav .nav-link:hover,button:active{
   background-size: 100% 100%;
-  color: #fff;
+  color: black;
   --t: 0.2s 0.1s;
 }
 
@@ -129,5 +126,5 @@ a:hover {
   --bs-btn-hover-bg: none;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-  color: #e1b181
+  color: #bdc29e
 }
