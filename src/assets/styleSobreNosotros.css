@@ -1,9 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@Import '../index.css';
 
 .card {
    --bs-card-border-width: 0px;
    padding: 1rem;
-   font-family: ui-monospace;
 }
 
 .bg-secondary {
@@ -18,7 +18,6 @@
   grid-template-rows: 2fr 1fr;
 }
 
-
 .img-insta{
     width: 100% !important;
 }
@@ -29,59 +28,16 @@
 }
 .img_button, .img_button:active {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     left: 0;
     right: 0;
-    bottom: 20rem;
-}
-.btn {
-    text-decoration: none;
-    --slant: 0.7em !important;
-    color: #bdc29e;
-    background: transparent !important;
-    border: 2px solid #bdc29e;
-    border-radius: 5px;
-    width: fit-content;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    padding: 5px 10px;
-    background: linear-gradient(to bottom left,var(--color) 50%,#0000 50.1%) top right, linear-gradient(to top right,var(--color) 50%,#0000 50.1%) bottom left !important;
-    background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border)) !important;
-    background-repeat: no-repeat !important;
-    box-shadow: 0 0 0 200px inset var(--s,#0000), 0 0 0 var(--border) inset var(--color) !important;
-    transition: color var(--t,0.3s), background-size 0.3s !important;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    width: 150px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    --border: 2px;
-    --slant: 0.7em;
-    --color: #bdc29e;
-    font-size: 17px;
-    padding: 4px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    color: var(--color);
-    background: linear-gradient(to bottom left,var(--color) 50%,#0000 50.1%) top right, linear-gradient(to top right,var(--color) 50%,#0000 50.1%) bottom left;
-    background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
-    background-repeat: no-repeat;
-    box-shadow: 0 0 0 200px inset var(--s,#0000), 0 0 0 var(--border) inset var(--color);
-    clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%,0 calc(100% - var(--slant)) );
-    transition: color var(--t,0.3s), background-size 0.3s;
-    text-transform: uppercase;
-    font-family: emoji;
-    letter-spacing: 3px;
-}
 
-.btn:hover {
-    /* color: var(--bs-btn-hover-color); */
-    /* background-color: var(--bs-btn-hover-bg); */
-    /* border-color: var(--bs-btn-hover-border-color); */
-    border-color: #bdc29e !important;
-    color: black !important;
-    background: #bdc29e !important;
-}
 .imgCover{
     object-fit: cover;
 }

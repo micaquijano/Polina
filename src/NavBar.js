@@ -1,26 +1,25 @@
 import React from 'react'
 import { Button, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Home } from './Home';
 import './assets/styleNavBar.css'
 
 export const NavBar = () => {
   return (
     <Navbar className='menu-style' collapseOnSelect expand="lg" bg="light" variant="light">
-        <Navbar.Brand href="/Home">
+        <Navbar.Brand href="/">
         <img alt='#' src="/imagenes/polinaLogo.png" />
         </Navbar.Brand>
-        <section className=' color-button'>
+        <section className='color-button'>
         <Navbar.Toggle aria-controls="responsive-navbar-nav "/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" >
-            <Button className='button' href="#SobreNosotros">Sobre Nosotros</Button>
-            <Button className='button' href="#Contactos">Contactos</Button>
+            <a href="#SobreNosotros">Sobre Nosotros</a>
+            <a href="#Contactos">Contactos</a>
             <NavDropdown title="Nuestros Productos" id="collasible-nav-dropdown">
-              <NavDropdown.Item  href="/Categoria/TazasPersonalizadas">Tazas Personalizadas</NavDropdown.Item>
-              <NavDropdown.Item href="/Categoria/tazasEnStock">
+              <NavDropdown.Item className='btn_effect'  href="/Categoria/TazasPersonalizadas">Tazas Personalizadas</NavDropdown.Item>
+              <NavDropdown.Item className='btn_effect'href="/Categoria/tazasEnStock">
               Tazas en Stock
               </NavDropdown.Item>
-              <NavDropdown.Item href="/Categoria/Deco">Deco</NavDropdown.Item>
+              <NavDropdown.Item className='btn_effect' href="/Categoria/Deco">Deco</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

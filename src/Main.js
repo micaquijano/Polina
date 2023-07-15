@@ -10,7 +10,7 @@ export const Main = () => {
     <>
 <BrowserRouter>
 <Routes>
-<Route exact path="Home" element={<Home/>}/>
+<Route exact path="" element={<Home/>}/>
 <Route exact path="Contactos" element={<Contactos/>}/>
 <Route exact path="Categoria/TazasPersonalizadas" element={<NuestrosProductos/>}/>
 <Route exact path="Categoria/tazasEnStock" element={<NuestrosProductos/>}/>

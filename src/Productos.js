@@ -1,6 +1,7 @@
+import { Button } from "bootstrap";
 import { useState } from "react";
 import { Card } from "react-bootstrap";
-const Productos = (props) => {
+const Productos = ({title, saludo, click2}) => {
   const [items, setItems] = useState([]);
   const [initCallApi, setInitCallApi] = useState(false);
   if (!initCallApi) {
@@ -23,11 +24,11 @@ const Productos = (props) => {
       {items.map((item) => (
         <Card key={item.id}>
           <Card.Img variant="top" src={item.image}></Card.Img>
-          <Card.Title>{item.name}</Card.Title>
+          <Card.Title >{item.name}</Card.Title>
+          <Button click={click2} >boton</Button>
         </Card>
       ))}
     </>
   );
 };
 export default Productos;
-

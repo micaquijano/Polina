@@ -5,7 +5,7 @@ img, svg {
     width: 100% !important;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-nav a:not(.dropdown-item) {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
     width: auto;
@@ -23,108 +23,84 @@ img, svg {
 .card {
     --bs-card-border-width: 0px;
     padding: 4rem;
-    font-family: ui-monospace;
-}
-/* prueba button*/
-.button {
-  --border: 2px;    /* the border width */
-  --slant: 0.7em;   /* control the slanted corners */
-  --color: #bdc29e; /* the color */
-  
-  font-size: 17px;
-  padding: 4px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  color: var(--color);
-  background: 
-     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
-     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
-  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
-  background-repeat: no-repeat;
-  box-shadow:
-    0 0 0 200px inset var(--s,#0000),
-    0 0 0 var(--border) inset var(--color);
-  clip-path: 
-      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
-              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
-             );
-  transition: color var(--t,0.3s), background-size 0.3s;
-  font-family: emoji;
 }
 
-.button:focus-visible {
+
+.navbar-nav a:not(.dropdown-item):focus-visible {
   outline-offset: calc(-1*var(--border));
   outline: var(--border) solid #000c;
   clip-path: none;
   background-size: 0 0;
 }
 
-.button:hover,button:active{
+.navbar-nav a:not(.dropdown-item):hover,.btn_effect:hover{
   background-size: 100% 100%;
   color: black;
   --t: 0.2s 0.1s;
 }
 
-.button:active {
-  --s: #0005;
-  transition: none;
-}
-.btn-primary {
-  --bs-btn-hover-bg: none;
-  letter-spacing: 4px;
-}
-
-/* prueba button desplegable*/
-.navbar-expand-lg .navbar-nav .nav-link {
-  --border: 2px;    /* the border width */
-  --slant: 0.7em;   /* control the slanted corners */
-  --color: #bdc29e; /* the color */
-  
-  font-size: 17px;
-  padding: 4px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  color: var(--color);
-  background: 
-     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
-     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
-  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
-  background-repeat: no-repeat;
-  box-shadow:
-    0 0 0 200px inset var(--s,#0000),
-    0 0 0 var(--border) inset var(--color);
-  clip-path: 
-      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
-              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
-             );
-  transition: color var(--t,0.3s), background-size 0.3s;
-  text-transform: uppercase;
-  font-family: emoji;
-  letter-spacing: 3px;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link:focus-visible {
-  outline-offset: calc(-1*var(--border));
-  outline: var(--border) solid #000c;
-  clip-path: none;
-  background-size: 0 0;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link:hover,button:active{
-  background-size: 100% 100%;
-  color: black;
-  --t: 0.2s 0.1s;
-}
-
-.button:active {
-  --s: #0005;
-  transition: none;
-}
-.btn-primary {
-  --bs-btn-hover-bg: none;
-}
 .dropdown-item:focus, .dropdown-item:hover {
   color: #bdc29e
 }
+
+
+
+.navbar-nav a:not(.dropdown-item), .btn_effect {
+  --border: 2px;
+  --slant: 0.7em;
+  --color: hsl(68, 23%, 69%);
+  font-size: 13px;
+  margin: 2px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color);
+  background: linear-gradient(to bottom left,var(--color) 50%,#0000 50.1%) top right, linear-gradient(to top right,var(--color) 50%,#0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 200px inset var(--s,#0000), 0 0 0 var(--border) inset var(--color);
+  clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%,0 calc(100% - var(--slant)) );
+  transition: color var(--t,0.3s), background-size 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.navbar-nav .dropdown-menu {
+  border: none;
+  background: transparent;
+}
+
+.navbar-nav .dropdown-menu a {
+color: black;
+background: var(--color);
+
+}
+.navbar-nav .dropdown-menu a:hover {
+  color: black;
+  background: linear-gradient(to bottom right,#fff 1%,#fff 50.1%) top left, linear-gradient(to top left,#fff 1%,#fff 50.1%) bottom right;
+  background-size: calc(var(--slant) + 1.3var(--border)) calc(var(--slant) + 1.3var(--border));
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0);
+  transition: color var(--t,0.3s), background-size 0.3s, clip-path 0.3s;;
+  }
+
+@media screen and (max-width: 992px) {
+  .navbar-nav a:not(.dropdown-item), .btn_effect {
+    font-size: 10px;
+    width: max-content;
+    min-width: 192px;
+    text-align: center;
+    margin-right: 45px;
+  }
+
+  .navbar-toggler{
+    float: right;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    margin-right: 16px !important;
+  }
+} 
