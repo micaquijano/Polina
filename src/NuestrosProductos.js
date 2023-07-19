@@ -31,7 +31,7 @@ export const NuestrosProductos = () => {
         <h1 class="bi bi-currency-dollar">{productos.price}</h1>
         <span class="badge bg-secondary fs-4 fit-height">#0221</span>
         <Button variant="primary" target="_blank"
-            class="text-white"
+            class="btn_effect"
             href="https://wa.me/+549115618107?text=Hola,%20quisiera%20más%20info%20de%20el%20producto%20%23221">Comprar</Button>
       </Card.Body>
     </Card>
