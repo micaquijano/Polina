@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './assets/styleNavBar.css'
 
 export const NavBar = () => {
